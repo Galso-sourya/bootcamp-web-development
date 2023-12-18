@@ -1,0 +1,141 @@
+<!--in visual studio,if we press ! followed by enter, a predefined code will be open which makes the structure better. this is called boilerplate code of html. here it is.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+</html>
+in visual studio, install auto close tag from extension tag. also live server,auto rename tag should be installed
+after writing in visual studio,write localhost:5500 in address bar or right click and open in live server.
+web crawlers from google rate your website by going through it. they parse the whole document.
+documentation link- 
+https://developer.mozilla.org/en-US/-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head><!--style tag should be added in header only-->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Welcome Page!!</title>
+        <style>nav{color:blue;}</style>
+    </head>
+    <body><link rel="stylesheet" href="style.css">
+<header>
+<div style="background-color:Red;"><h1><strong>Welcome</strong> to my personal Website!!!!</h1></div>
+</header><!--good website contains only one h1. It is useful for search engine optimization-->
+<br>
+<section class="container1">
+    <figure><img src="https://images.unsplash.com/photo-1680762424301-604a1697f698?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="this is a picture" width="300px" height="200px"><figcaption>random image</figcaption></figure>
+        <!-- <audio src="..." loop controls></audio> we can add autoplay instead of loop. autoplay does not work in some browsers. try to give autoplay as well as muted together. you can not add youtube video by video tag.you have to use iframe tag.
+alt means alternative. if somehow the picture is not loading,we can see this text
+iframe is to embed the whole website-->
+<iframe src="https://codingblocks.com/" id="website"></iframe><!--for youtube video, share and embed-->
+</section>
+    <h2 style="margin:20px">-Created by <b>Sourya</b></h2>
+<!--2-3 h2 can be there but not more than that. strong and bold has no effect in heading it seems-->
+<hr>
+    <h3>The website is created for my project</h3>
+
+    <nav><ul><li><h4>Rate Us</h4></li> 
+    <li><h5>Log In</h5></li>
+    <li><h6>Contact</h6></li></ul></nav>
+	
+    <main><section><p style="font-size:10px"><!--font family can be added too-->I have a <i>degree</i> of <em>M.Tech</em>
+<!--em for emphasis--> in <strong>Bioinformatics.          </strong> So this website is created for my own practice and to apply my knowledge of <b>Web Development.&nbsp; &nbsp;<!--nbsp is no break space. to create space in a paragraph--></b> So chill and enjoy!!!!</p><!--in visual studio, type lorem to generate one random paragraph.
+    lorem*5 will create 5 such paragraphs-->
+ <!--div is block element while span is in line tag-->
+</section>  
+ <div id="quotes"><ol><li>"Love and work. Work and love. That's the way-Freud"</li><li>"Another quote"-unknown</li></ol><ol type="A" start="1"><li>Titanic</li><li>Avatar</li></ol><!--reversed attribute is for ordered list only--></div> 
+ <!--html entities are signs with no ise. like cpywrite sign
+ &lt; is for starting tag printing and &gt; is for closing tag printing. code tag gives coding structure to text. pre tag keeps space as it is.sup is for superscript and sub tag is for subscript
+id comes inside a common class 
+ --><details>
+<table border="5" cellpadding="5" cellspacing="5"><thead><tr><th>Degree</th><th>Year</th><th>Institute</th></tr></thead><tbody><tr><th>M.tech</th><td>2022</td><td rowspan="2"><!--colspan is also there-->University of Hyderabad</td></tr><tr><th>M.Sc</th><td>2020</td></tr><tr><th>B.Sc</th><td>2018</td></tr></tbody><tfoot></tfoot></table>
+</details>     
+ <form method="post">
+<!--go to network and payload. it will show submitted data. we can write get method alao here where the information will be shown on address bar-->
+<fieldset><legend>user details</legend><label for="username">UserName:-</label>
+ <input type="text" placeholder="username" id="username" name="username"><!--if for attribute of label is same as if of input, the box will be highlighted autometically once created. read about hashmap. name goes to server--><br><label for="firstname">Name:-</label>
+ <input type="text" placeholder="firstname" id="firstname" name="firstname" value="telll">
+ <select><option>yes</option><option>no</option></select>
+ <select><option>yes</option><option selected>no</option></select>
+ <input type="date">
+ <input type="range" min="0" max="5" step="1">
+ <input type="number" placeholder="idnumber">
+ <input type="checkbox"><input type="color"><input type="file">
+ <input type="checkbox" checked>
+ <input type="email" placeholder="email">
+ <input type="password" placeholder="password">
+ <label for="gender">Gender</label>
+ <input type="radio"><input type="radio">
+ <textarea></textarea>
+ <input type="radio" name="radio"><input type="radio" name="radio">
+    <button type="submit" >Submit</button><button type="reset">reset</button></fieldset></form>
+	<!--adjascent-->
+<section class="container">
+        <div class="box">1<div class="box" id="inside">1.1</div></div>
+<p>nextt</p> 		
+<div class="box">2</div>  
+<div class="box">3</div>
+<div class="box">4</div>
+</section>
+<!--general sibling-->
+<section class="container0">
+<div class="box0" id="psudo">1</div>
+<p>nextt</p>  
+<div class="box0">2</div>  
+<div class="box0">3</div>
+<div class="box0">4</div>
+</section>
+<section class="container2">
+<div class="box1">1</div>  
+<div class="box1" id="relative">2</div>
+</section>
+<section class="container3">
+<div class="box2" id="psudo">1</div>  
+<div class="box2">2</div>  
+<div class="box2">3</div>
+<div class="box2">4</div>
+</section>
+<section class="container4">
+<div class="box3">1</div>  
+<div class="box3" id="relative0">2</div>
+</section>
+<section class="container5">
+<div class="box4" id="relative2">1</div>  
+<div class="box4" id="relative1">2</div>
+</section>
+<section class="container6">
+<div class="box5">1</div>
+<div class="box5">2</div>
+<div class="box5">3</div>
+<div class="box5">4</div>
+</section>
+<section class="container7">
+<div class="box6">1</div>
+<div class="box6">2</div>
+<div class="box6">3</div>
+<div class="box6">4</div>
+<div class="box6">5</div>
+</section>
+    </main>
+   <footer style="background-color:black;color:white;padding:10px">   
+   Thanks for visiting!!!! &copy; &hearts;<br>
+   <nav >
+   <a style="padding:10px;text-decoration:none" href="https://www.google.com/" >Google</a> 
+    <a style="padding:10px" href="#">reload</a> <a href="tel:9903232233">Telephone</a>
+    <a href="mailto: banerjeesourya1@gmail.com">mail us</a> 
+    <!--<a href="#id_name">reload</a>
+    <a href="html_file_name#id_name">reload</a>
+    -->
+	</nav>
+	</footer> 
+    </body>
+</html>
